@@ -35,7 +35,7 @@ The master theorem is used to analyze the complexity of a certain type of recurr
 ### Theorem (Master Theorem):  
   
 > Consider the recurrence:   
->$$\tag{1} T(n)=aT(n/b)+f(n),$$  
+> $$\tag{1} T(n)=aT(n/b)+f(n),$$  
 > where $a\geq 1$, $b>1$, then $T(n)$ has the following asymptotic bounds:  
 >  
 > 1. If $f(n)=O(n^{\log_b a-\epsilon})$ for some constant $\epsilon\geq 0$, then $T(n)=\Theta(n^{\log_b a})$.  
@@ -53,13 +53,14 @@ The master theorem is used to analyze the complexity of a certain type of recurr
 When $n$ is some power of $b$, there's no rounding in calculation. We start with this special case. The following proof mainly comes from *Introduction to Algorithms*. The arguments in this section all assume that $n=b^l$ for some $l\in\mathbb{N}$ so it will be omitted.  
   
 > For recurrence $(1)$, we define running time function $T(n)$ as follows, where $f(n)$ is nonnegative.  
+>   
 > $$T(n)=\begin{cases}\Theta(1),&n=1,\\aT(n/b)+f(n),&n=b^j,j\in\mathbb{N}^*.\end{cases}$$  
   
 Note that $T(n)$ here is **only** defined on exact powers of $b$.  
   
 ### Lemma 1:  
   
->  $$T(n)=\Theta(n^{\log_b a})+\displaystyle\sum_{i=0}^{\log_b n-1}a^if(n/b^i),$$  
+> $$T(n)=\Theta(n^{\log_b a})+\displaystyle\sum_{i=0}^{\log_b n-1}a^if(n/b^i),$$  
   
 ***Proof:***  
   
@@ -167,7 +168,7 @@ Q.E.D for special case.
   
 In practice $n$ is not always exact powers of $b$, for example, in the *merge sort* case:  
   
-$$T(n)=T(\lfloor n/2\rfloor)+T(\lceil n/2\rceil)+\Theta(n)$$.  
+$$T(n)=T(\lfloor n/2\rfloor)+T(\lceil n/2\rceil)+\Theta(n).$$  
   
 Then the above argument might not work. But if we assume that $T(n)$ grows monotonically when $n$ is sufficient large, then we know these weird recurrences can be bounded by:  
   
