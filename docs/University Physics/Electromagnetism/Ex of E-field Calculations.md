@@ -108,6 +108,7 @@ Due to symmetry, we just need to calculate $E_y $:
 $$  
 \begin{aligned}E_y&=\frac{1}{4\pi\varepsilon_{0}}\iint_{x^2+z^2\leq r^2}\frac{\sigma\cos\theta}{r'^2}dxdz\\&=\frac{1}{4\pi\varepsilon_{0}}\int_0^{2\pi}d\theta\int_0^R\frac{\sigma Lr}{(r^2+L^2)^\frac{3}{2}}dr\\&=\frac{\sigma L}{2\varepsilon_0}(\frac{1}{L}-\frac{1}{\sqrt{R^2+L^2}}).\end{aligned}  
 $$  
+  
 If $R\gg L$, then $\displaystyle E_y\approx \frac{\sigma}{2\varepsilon_0}$. This result is important. Now let's prove a conclusion:  
   
 > Given a uniformly charged sheet, no matter what shape it is, the electric field at a point above the sheet and close enough to the sheet is roughly $\frac{\sigma}{2\varepsilon_0}$.  
@@ -119,4 +120,5 @@ This is why e-field between two plates of capacitors are approximately uniform.
 This result can also be acquired by dividing into parallel rods.  
   
 ---  
-next: [[./Gauss' Law|Gauss' Law]], how many problems above can be solved using Gauss' law?
+Ahead:  
+- [[./Gauss' Law|Gauss' Law]], how many problems above can be solved using Gauss' law?
