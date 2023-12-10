@@ -27,7 +27,9 @@ First, let's calculate the *divergence* of an electric field, which is given by:
 $$  
 \vec{\nabla}\cdot\vec{E}=\frac{\partial \vec{E}}{\partial x}+\frac{\partial \vec{E}}{\partial y}+\frac{\partial \vec{E}}{\partial z}.  
 $$  
+  
 For a general electric field:  
+  
 $$  
 \tag{1}\vec{E}(\vec{x})=\frac{1}{4\pi\varepsilon_{0}}\int\frac{\rho(\vec{r})(\vec{x}-\vec{r})}{\|\vec{x}-\vec{r}\|^{3}}d\vec{r}.  
 $$  
@@ -49,6 +51,7 @@ Wow, what does this mean? Remember *Gauss' divergence theorem* ?
 $$  
 \displaystyle \int_V(\vec{\nabla} \cdot \mathbf{F})dV=\oint_S \mathbf{F}\cdot d\mathbf{S},  
 $$  
+  
 in which $\partial V=S$.  
   
 Our above calculation shows that $\vec{\nabla} \cdot \vec{E}=0$. But this derivation applies only when $\vec{x}$ is not in the integration zone, since we can't have zero denominator.   
@@ -73,11 +76,11 @@ What about closed surfaces that contains charge? Let's start with the simplest c
   
 For point charge, we consider the surface $A$ of a sphere whose origin is the charge, then electric field is always in the same direction as outward pointing normal, so  
   
-$\displaystyle \phi_E=\oint_A\vec{E}\cdot d\vec{A}=\oint_A EdA=E\cdot 4\pi r^2=\frac{q}{\varepsilon_0}.$  
+$$\phi_E=\oint_A\vec{E}\cdot d\vec{A}=\oint_A EdA=E\cdot 4\pi r^2=\frac{q}{\varepsilon_0}.$$  
   
 It immediately follows that for a discrete charge distribution $q_i$, for any closed surface containing them,  
   
-$\displaystyle \phi_E=\oint_A(\sum\vec{E}_i)\cdot d\vec{A}=\sum\oint_A\vec{E}_i\cdot d\vec{A}=\sum E_i\cdot 4\pi r^2=\frac{1}{\varepsilon_0}\sum q_i.$  
+$$\phi_E=\oint_A(\sum\vec{E}_i)\cdot d\vec{A}=\sum\oint_A\vec{E}_i\cdot d\vec{A}=\sum E_i\cdot 4\pi r^2=\frac{1}{\varepsilon_0}\sum q_i.$$  
   
 What about the general case? Here comes *Gauss' law*:  
   
@@ -85,9 +88,7 @@ What about the general case? Here comes *Gauss' law*:
   
 For any closed surface $A$,  
   
-> $$  
-> \displaystyle\phi_E=\oint_A\vec{E}\cdot d\vec{A}=\frac{Q}{\varepsilon_0}.  
-> $$  
+> $$\phi_E=\oint_A\vec{E}\cdot d\vec{A}=\frac{Q}{\varepsilon_0}.$$  
   
 Where $Q$ is the total charge inside $A$. This is true for any charge distributions.  
   
@@ -105,22 +106,29 @@ $$
 &=\frac{Q}{\varepsilon_0}.  
 \end{aligned}  
 $$  
+  
 Where $(\text{-})$ comes from previous conclusion. Actually this proof is still not exact, since we require $A$ to contain all charge. When $A$ is arbitrary, the change may be incorrect. (why?) But Gauss' law is true for any $A$,   
   
 ## Differential  
   
 At the beginning we wrote:  
+  
 $$  
 \vec{\nabla}\cdot \vec{E}=0,\;where\;\rho=0.  
 $$  
+  
 Gauss' law implies that:  
+  
 $$  
 \int_V \vec{\nabla}\cdot \vec{E}d\vec{x}=\oint_{\partial V}\vec{E}\cdot d\vec{A}=\frac{Q}{\varepsilon_0}=\int_V\frac{\rho}{\varepsilon_0} d\vec{x}.  
 $$  
+  
 It seems that  
+  
 $$  
 \vec{\nabla}\cdot \vec{E}=\frac{\rho}{\varepsilon_0}.  
 $$  
+  
 The problem is, when $\rho(\vec{x})\ne 0$, the integral $(1)$ is an *improper integral*. The derivation involves some very complicated math, so we will not cover it here now. But this equation is true, and is called the differential expression of Gauss' law.  
   
 ## Applications  
