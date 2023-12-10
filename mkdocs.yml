@@ -2,7 +2,7 @@ site_name: testblog # Change this to your site name
 site_description: A new blog site in test.
 site_url: https://tosmic20.github.io/testblog # Change this to your site URL
 repo_url: https://github.com/TosMIC20/testblog
-repo_name: squidfunk/mkdocs-material
+repo_name: TosMIC20/testblog
 
 theme:
     name: 'material'
