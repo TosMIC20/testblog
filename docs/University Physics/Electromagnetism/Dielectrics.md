@@ -6,7 +6,7 @@ lev: 4
 categories:  
   - University Physics  
   - Electromagnetism  
-share: "true"  
+share: true  
 ---  
   
 # Table of Contents  
@@ -57,14 +57,19 @@ $$
 V(\vec{x})=\frac{1}{4\pi\varepsilon_0}\frac{(\vec{x}-\vec{r})\cdot\vec{p}}{\|\vec{x}-\vec{r}\|^3}.  
 $$  
 Where $\vec{r}$ is the location of this dipole chunk, then the influence would be:  
+  
 $$  
 V'(\vec{x})=\frac{1}{4\pi\varepsilon_0}\int_{\mathcal{V}}\frac{(\vec{x}-\vec{r})\cdot\vec{P}}{\|\vec{x}-\vec{r}\|^3}dV.  
 $$  
+  
 Set $\vec{\eta}=\vec{x}-\vec{r}$, and $\eta=\|\vec{x}-\vec{r}\|$ now we use a trick. Notice that $\vec{\nabla}(\frac{1}{\eta})=\frac{\vec{\eta}}{\eta^3}$, and:  
+  
 $$  
 \vec{\nabla}\cdot\left(\frac{1}{\eta}\vec{P}\right)=\vec{\nabla}\left(\frac{1}{\eta}\right)\cdot\vec{P}+\frac{1}{\eta}\left(\vec{\nabla}\cdot\vec{P}\right).  
 $$  
+  
 We know that:  
+  
 $$  
 \begin{aligned}  
 V'(\vec{x})  
@@ -73,11 +78,13 @@ V'(\vec{x})
 &=\frac{1}{4\pi\varepsilon_0}\left(\int_{\partial\mathcal{V}}\frac{1}{\eta}\vec{P}\cdot d\vec{S}+\int_{\mathcal{V}}\frac{1}{\eta}\left(-\vec{\nabla}\cdot\vec{P}\right)dV\right).  
 \end{aligned}  
 $$  
+  
 Think about it yourself that the first term is equivalent to a surface charge $\sigma'=\vec{P}\cdot\hat{n}$ on $\partial\mathcal{V}$ (where $\hat{n}$ is unit outward pointing normal vector), and the second term is equivalent to a charge density $\rho'=-\vec{\nabla}\cdot\vec{P}$ in $\mathcal{V}$. Also, you can verify it that the same is true for calculation of electric field.  
   
 Thus, the effect of $\vec{P}$ can be think of these two parts. $\sigma'$ are called *induced surface charge density*, and $\rho'$ are called *induced volume charge density*.  
   
 Moreover, if we have $\vec{P}=\varepsilon_0\chi_e \vec{E}_{ext}$, then the change can be quantized. (Think of the reason that we use $\vec{E}$ to calculate $\vec{P}$, instead of $\vec{E}_0$)  
+  
 $$  
 \begin{aligned}  
 \vec{E}  
@@ -87,21 +94,26 @@ $$
 &=-\chi_e \vec{E}+\vec{E}_0.  
 \end{aligned}  
 $$  
+  
 Thus,  
 $$  
 \vec{E}=\frac{1}{\chi_e+1}\vec{E}_0.  
 $$  
+  
 We define $\varepsilon_r=\chi_e+1$ to be the ***relative permittivity*** of the dielectric. Associating this with the formula at the very beginning, we know $\kappa=\varepsilon_r$.  
   
 ## Modified Gauss' law  
   
 In the presence of dielectrics, the original Gauss' law needs to be modified. In terms of isotropic dielectrics, we know that $\vec{E}=\frac{1}{\varepsilon_r}\vec{E}_0$, so we can directly modify it:  
+  
 $$  
 \oint_A\vec{E}\cdot d\vec{A}=\frac{Q_{in}}{\varepsilon_0\varepsilon_r}=\frac{Q_{in}}{\varepsilon}.  
 $$  
+  
 Where $\varepsilon=\varepsilon_0\varepsilon_r$ is called ***permittivity*** of the dielectric.  
   
 In general, we can define ***electric displacement*** $\vec{D}=\varepsilon_0\vec{E}+\vec{P}$. Since:  
+  
 $$  
 \begin{aligned}  
 \rho&=\rho_0+\rho'\\  
@@ -109,7 +121,9 @@ $$
 \vec{\nabla}\cdot\vec{D}&=\varepsilon_0\vec{\nabla}\cdot\vec{E}_0.  
 \end{aligned}  
 $$  
+  
 We have:  
+  
 $$  
 \begin{aligned}  
 \oint_A\vec{D}\cdot d\vec{A}&=\int_V \vec{\nabla}\cdot\vec{D}dV\\  
@@ -120,6 +134,7 @@ $$
 $$  
   
 This formula:  
+  
 $$  
 \oint_A\vec{D}\cdot d\vec{A}=Q_{in},  
 $$  
@@ -138,7 +153,9 @@ Actually, when you insert a dielectric, it will be subject to a force exerted by
 Let's recall [[./Electric Dipole#The electric force on dipole|electric force on dipole]], there are force on dielectric if the electric field is not constant, and there are so called *fringe effect* which says that at the edge of a capacitor, the electric field is not constant.   
   
 There's actually a formula of force on the dielectrics in an electric field. It can be given by:   
+  
 $$  
 \vec{F}_V=(\vec{P}\cdot\vec{\nabla})\vec{E}.  
 $$  
+  
 Where $\vec{F}_V$ is force in a unit volume.
