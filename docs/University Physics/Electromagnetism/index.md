@@ -6,7 +6,7 @@ lev: 3
 categories:  
   - University Physics  
   - Electromagnetism  
-share: "true"  
+share: true  
 ---  
   
   
