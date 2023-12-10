@@ -71,6 +71,7 @@ Where $\hat{\alpha}$ is the unit vector in the direction of $\vec{L}\times\vec{B
 ### Loop  
   
  It's easy to see that there's no net force on a loop carrying current in magnetic field. However, there may be a torque. Since there's no net force, the torque is independent of choice of origin.   
+   
 $$  
 \begin{aligned}  
 \vec{\tau}&=\oint\vec{r}\times d\vec{F}\\  
@@ -79,6 +80,7 @@ $$
 \end{aligned}  
 $$  
 Consider two parts separately, using *Stokes' theorem*.  
+  
 $$  
 \begin{aligned}  
 \oint (\vec{r}\cdot\vec{B})d\vec{l}&=\iint (d\vec{S}\times\vec{\nabla}(\vec{r}\cdot\vec{B}))\\  
@@ -92,6 +94,7 @@ $$
 \oint fd\vec{l}=\iint (d\vec{S}\times\vec{\nabla}f).  
 $$  
 Which comes from:  
+  
 $$  
 \begin{aligned}  
 \oint fd\vec{l}&=\hat{i}\oint (f,0,0)\cdot d\vec{l}+\hat{j}\oint (0,f,0)\cdot d\vec{l}+\hat{k}\oint (0,0,f)\cdot d\vec{l}\\  
@@ -101,6 +104,7 @@ $$
 \end{aligned}  
 $$  
 The second part:  
+  
 $$  
 \begin{aligned}  
 \oint (\vec{r}\cdot d\vec{l})\vec{B}&=\vec{B}\oint\vec{r}\cdot d\vec{l}\\  
