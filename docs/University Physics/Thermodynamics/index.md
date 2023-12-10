@@ -3,7 +3,7 @@ tags:
   - physics  
   - thermodynamics  
 lev: 3  
-share: "true"  
+share: true  
 categories:  
   - University Physics  
   - Thermodynamics  
