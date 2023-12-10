@@ -6,7 +6,7 @@ lev: 4
 categories:  
   - University Physics  
   - Thermodynamics  
-share: "true"  
+share: true  
 ---  
   
   
