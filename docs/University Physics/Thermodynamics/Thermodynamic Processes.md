@@ -6,7 +6,7 @@ lev: 4
 categories:  
   - University Physics  
   - Thermodynamics  
-share: "true"  
+share: true  
 ---  
   
 # Table of Contents  
@@ -60,19 +60,21 @@ Whenever you see a curve on $P$-$V$ graph, it must represent a **reversible** pr
   
 We can carefully control the temperature and the volume of the gas during compression or expansion so that $\frac{dT}{T}=\frac{dV}{V}$ always stands, we will have $p$ as a constant:  
   
-$(p+dp)(V+dV)=nR(T+dT)\implies dp\equiv0$.  
+$$(p+dp)(V+dV)=nR(T+dT)\implies dp\equiv0.$$  
   
 Under this condition:  
   
 - Work: $\displaystyle W=\int_{V_1}^{V_2}pdV=p\Delta V$.  
-- Heat flow: $\displaystyle dQ=C_pdT=\frac{C_pT}{V}dV=\frac{C_p}{nR}pdV=\frac{C_p}{nR}dW$, so $\displaystyle Q=C_p\Delta T=\frac{C_p}{nR}W$. (Assuming $C_p$ is constant.)  
+- Heat flow: $\displaystyle dQ=C_pdT=\frac{C_pT}{V}dV=\frac{C_p}{nR}pdV=\frac{C_p}{nR}dW$,   
+  so $\displaystyle Q=C_p\Delta T=\frac{C_p}{nR}W$. (Assuming $C_p$ is constant.)  
   
 ### Isochoric process  
   
 This is easy to understand, as long as we fix the size of the container, we can have such a process with $dV\equiv0$. In this case, we have $\frac{dT}{T}=\frac{dp}{p}$, so:  
   
 - Work: $dW=pdV\equiv 0$, $W=0$.  
-- Heat flow: $\displaystyle dQ=C_VdT=\frac{C_VT}{p}dp=\frac{C_VV}{nR}dp$, $\displaystyle Q=C_V\Delta T=\frac{C_VV}{nR}\Delta p$. (Assuming $C_V$ is constant.)  
+- Heat flow: $\displaystyle dQ=C_VdT=\frac{C_VT}{p}dp=\frac{C_VV}{nR}dp$,   
+  so $\displaystyle Q=C_V\Delta T=\frac{C_VV}{nR}\Delta p$. (Assuming $C_V$ is constant.)  
   
 ### Adiabatic process  
   
@@ -96,25 +98,25 @@ In isothermal process, temperature is constant, thus $dU=0$.
   
 In order to better analyze it, we construct an isochoric path that has the same temperature change with the adiabatic process, so:  
   
-$dU=-pdV=C_VdT$.  
+$$dU=-pdV=C_VdT.$$  
   
 According to $pV=nRT$, we have:  
   
-$pdV+Vdp=nRdT$.  
+$$pdV+Vdp=nRdT.$$  
   
 Combine the two, we know that:  
   
-$\displaystyle Vdp=nRdT-pdV=-\frac{nR}{C_V}pdV-pdV=-\frac{C_V+nR}{C_V}pdV=-\frac{C_p}{C_V}pdV$.  
+$$\displaystyle Vdp=nRdT-pdV=-\frac{nR}{C_V}pdV-pdV=-\frac{C_V+nR}{C_V}pdV=-\frac{C_p}{C_V}pdV.$$  
   
 We call $\gamma=\frac{C_p}{C_V}$ adiabatic index, and there are:  
   
-$\displaystyle \frac{dp}{p}=-\gamma\frac{dV}{V}$.  
+$$\displaystyle \frac{dp}{p}=-\gamma\frac{dV}{V}.$$  
   
 This gives $PV^\gamma=Constant$.  
   
 Thus work done can be described by:  
   
-$\displaystyle \begin{aligned}W=\int_{V_1}^{V_2}pdV&=\int_{V_1}^{V_2}\frac{p_1V_1^\gamma}{V^\gamma}dV\\ &=(\gamma-1)p_1V_1^\gamma(\frac{1}{V_1^{\gamma-1}}-\frac{1}{V_2^{\gamma-1}})\\ &=(\gamma-1)(p_1V_1-p_2V_2)\\ &=-(\gamma-1)nR\Delta T.\end{aligned}$  
+$$\begin{aligned}W=\int_{V_1}^{V_2}pdV&=\int_{V_1}^{V_2}\frac{p_1V_1^\gamma}{V^\gamma}dV\\ &=(\gamma-1)p_1V_1^\gamma(\frac{1}{V_1^{\gamma-1}}-\frac{1}{V_2^{\gamma-1}})\\ &=(\gamma-1)(p_1V_1-p_2V_2)\\ &=-(\gamma-1)nR\Delta T.\end{aligned}$$  
   
 The result is within expectation, since we defined internal energy to be work done in adiabatic process.  
   
