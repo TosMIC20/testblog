@@ -1,11 +1,13 @@
-site_name: your_site_name # Change this to your site name
-site_description: A cool description of your site
-site_url: https://change_me.io/ # Change this to your site URL
+site_name: testblog # Change this to your site name
+site_description: A new blog site in test.
+site_url: https://tosmic20.github.io/testblog # Change this to your site URL
+repo_url: https://github.com/TosMIC20/testblog
+repo_name: squidfunk/mkdocs-material
 
 theme:
     name: 'material'
-    logo: assets/meta/favicons.png
-    favicon: assets/meta/favicons.png
+    logo: assets/meta/logo-192x192.png
+    favicon: assets/meta/favicon-32x32.png
     custom_dir: overrides
     font:
         text: Ubuntu
