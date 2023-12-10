@@ -6,7 +6,7 @@ lev: 4
 categories:  
   - University Physics  
   - Thermodynamics  
-share: "true"  
+share: true  
 ---  
   
 # Table of Contents  
@@ -39,7 +39,8 @@ An ***engine*** is a device that transforms thermal energy into mechanical energ
   
 1. works in cycles. Engines operate and perform work in closed cycles. Then  
   
-   $\Delta U=Q-W=0$.  
+   $$\Delta U=Q-W=0$$  
+.  
   
 2. includes more than one thermal reservoir. With only one temperature, area enclosed is zero, thus $W=0$.  
   
@@ -47,7 +48,7 @@ An ***engine*** is a device that transforms thermal energy into mechanical energ
   
 The efficiency of an engine is defined as:  
   
-$\displaystyle\eta=\frac{W}{Q_h}$,  
+$$\eta=\frac{W}{Q_h},$$  
   
 where $W$ is the work done in one cycle, $Q_h$ is the total positive heat flow supplied by the  
 burning fuel.  
@@ -83,23 +84,25 @@ Heat flow only comes from isothermal processes:
   
 $W_{AB}$ and $W_{CD}$ is easy to get:  
   
-$\displaystyle W_{AB}=\int_{V_A}^{V_B}pdV=\int_{V_A}^{V_B}\frac{nRT_h}{V}dV=nRT_h\ln\frac{V_B}{V_A}$.  
+$$  
+W_{AB}=\int_{V_A}^{V_B}pdV=\int_{V_A}^{V_B}\frac{nRT_h}{V}dV=nRT_h\ln\frac{V_B}{V_A}$$.  
   
-$\displaystyle W_{CD}=\int_{V_C}^{V_D}pdV=\int_{V_C}^{V_D}\frac{nRT_c}{V}dV=nRT_c\ln\frac{V_D}{V_C}<0$.  
+$$  
+W_{CD}=\int_{V_C}^{V_D}pdV=\int_{V_C}^{V_D}\frac{nRT_c}{V}dV=nRT_c\ln\frac{V_D}{V_C}<0$$.  
   
 This is a cycle, we have $W=Q=Q_h-|Q_c|$, so:  
   
-$\displaystyle \eta=\frac{W}{Q_h}=\frac{Q_h-|Q_c|}{Q_h}=1-\frac{|Q_c|}{Q_h}$.  
+$$\eta=\frac{W}{Q_h}=\frac{Q_h-|Q_c|}{Q_h}=1-\frac{|Q_c|}{Q_h}.$$  
   
 Also, we can express $\frac{V_D}{V_C}$ in terms of $\frac{V_B}{V_A}$:  
   
-$\displaystyle \frac{V_D}{V_C}=\left((\frac{V_D}{V_C})^\gamma\right)^\frac{1}{\gamma}=\left(\frac{\frac{p_AV_A^\gamma}{p_D}}{\frac{p_BV_B^\gamma}{p_C}}\right)^\frac{1}{\gamma}=\left(\frac{p_AV_A^\gamma p_C}{p_BV_B^\gamma p_D}\right)^\frac{1}{\gamma}=\left(\frac{V_A^{\gamma-1} V_D}{V_B^{\gamma-1} V_C}\right)^\frac{1}{\gamma}$,  
+$$\frac{V_D}{V_C}=\left((\frac{V_D}{V_C})^\gamma\right)^\frac{1}{\gamma}=\left(\frac{\frac{p_AV_A^\gamma}{p_D}}{\frac{p_BV_B^\gamma}{p_C}}\right)^\frac{1}{\gamma}=\left(\frac{p_AV_A^\gamma p_C}{p_BV_B^\gamma p_D}\right)^\frac{1}{\gamma}=\left(\frac{V_A^{\gamma-1} V_D}{V_B^{\gamma-1} V_C}\right)^\frac{1}{\gamma},$$  
   
 thus $\displaystyle \left(\frac{V_D}{V_C}\right)^{\gamma-1}=\left(\frac{V_A}{V_B}\right)^{\gamma-1}$, that is $\displaystyle \frac{V_D}{V_C}=\frac{V_A}{V_B}$.  
   
 So:  
   
-$\displaystyle \eta=1-\frac{|Q_c|}{Q_h}=1+\frac{nRT_c\ln\frac{V_D}{V_C}}{nRT_h\ln\frac{V_B}{V_A}}=1-\frac{T_c}{T_h}$.  
+$$\eta=1-\frac{|Q_c|}{Q_h}=1+\frac{nRT_c\ln\frac{V_D}{V_C}}{nRT_h\ln\frac{V_B}{V_A}}=1-\frac{T_c}{T_h}.$$  
   
 This means the efficiency of a Carnot cycle only depends on the temperatures of the two thermal reservoirs.  
   
@@ -124,7 +127,7 @@ The result is purely converting $(\eta_A-\eta_B)Q_h$ heat from the cold reservoi
   
 This tells us that whether the work gas is ideal or not, the efficiency of Carnot engine between $T_h$ and $T_c$ is:  
   
-$\displaystyle \eta=1-\frac{T_c}{T_h}$.  
+$$\displaystyle \eta=1-\frac{T_c}{T_h}.$$  
   
 >[!INFO]  
 >The rest are all examples. For new knowledge you can advance to [[./The 2nd Law of Thermodynamics|The 2nd Law of Thermodynamics]] and [[./Entropy|Entropy]].  
@@ -139,19 +142,19 @@ The Stirling cycle also consists of 4 legs, but a little bit different.
   
 The only legs that do work are $\text{I}$ and $\text{III}$, thus:  
   
-$\displaystyle W=W_{\text{I}}+W_{\text{III}}=nRT_h\ln\left(\frac{V_2}{V_1}\right)+nRT_c\ln\left(\frac{V_1}{V_2}\right)=nR(T_h-T_c)\ln\left(\frac{V_2}{V_1}\right)$.  
+$$W=W_{\text{I}}+W_{\text{III}}=nRT_h\ln\left(\frac{V_2}{V_1}\right)+nRT_c\ln\left(\frac{V_1}{V_2}\right)=nR(T_h-T_c)\ln\left(\frac{V_2}{V_1}\right)$$  
   
 The legs that absorb heat are $\text{I}$ and $\text{IV}$, thus:  
   
-$\displaystyle Q_{in}=Q_{\text{I}}+Q_{\text{IV}}=nRT_h\ln\left(\frac{V_2}{V_1}\right)+nc_{V,m}(T_h-T_c)$.  
+$$Q_{in}=Q_{\text{I}}+Q_{\text{IV}}=nRT_h\ln\left(\frac{V_2}{V_1}\right)+nc_{V,m}(T_h-T_c)$$  
   
 So the efficiency is:  
   
-$\displaystyle \eta_S=\frac{W}{Q_{in}}=\frac{R(T_h-T_c)\ln(V_2/V_1)}{RT_h\ln(V_2/V_1)+c_{V,m}(T_h-T_c)}$.  
+$$\eta_S=\frac{W}{Q_{in}}=\frac{R(T_h-T_c)\ln(V_2/V_1)}{RT_h\ln(V_2/V_1)+c_{V,m}(T_h-T_c)}$$  
   
 Obviously:  
   
-$\displaystyle \eta_S=\frac{R(T_h-T_c)\ln(V_2/V_1)}{RT_h\ln(V_2/V_1)+c_{V,m}(T_h-T_c)}<\frac{R(T_h-T_c)\ln(V_2/V_1)}{RT_h\ln(V_2/V_1)}=\frac{T_h-T_c}{T_h}=\eta_C$.  
+$$\eta_S=\frac{R(T_h-T_c)\ln(V_2/V_1)}{RT_h\ln(V_2/V_1)+c_{V,m}(T_h-T_c)}<\frac{R(T_h-T_c)\ln(V_2/V_1)}{RT_h\ln(V_2/V_1)}=\frac{T_h-T_c}{T_h}=\eta_C$$  
   
 So the efficiency of the Stirling cycle is less than that of the Carnot cycle.  
   
@@ -174,9 +177,9 @@ The sign of work $W$ here is actually reversed. Keep in mind that we are doing w
   
 If we know the efficiency $\eta$ of the engine that runs in reverse, we can calculate the coefficients of performance:  
   
-$\displaystyle K_{hp}=\frac{Q_h}{W}=\frac{1}{\eta}\geq \frac{1}{\eta_C}$,  
+$$K_{hp}=\frac{Q_h}{W}=\frac{1}{\eta}\geq \frac{1}{\eta_C}.$$  
   
-$\displaystyle K_{ref}=\frac{|Q_c|}{W}=\frac{Q_h-W}{W}=\frac{1}{\eta}-1\geq\frac{1}{\eta_C}-1$.  
+$$K_{ref}=\frac{|Q_c|}{W}=\frac{Q_h-W}{W}=\frac{1}{\eta}-1\geq\frac{1}{\eta_C}-1.$$  
   
 ---  
 Ahead:  

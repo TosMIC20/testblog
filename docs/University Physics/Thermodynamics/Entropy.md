@@ -6,7 +6,7 @@ lev: 4
 categories:  
   - University Physics  
   - Thermodynamics  
-share: "true"  
+share: true  
 ---  
   
 # Table of Contents  
@@ -30,11 +30,11 @@ share: "true"
   
 In Carnot cycle, considering the sign of $Q$, we know that:  
   
-$\displaystyle \frac{Q_c}{T_c}+\frac{Q_h}{T_h}=0$.  
+$$\frac{Q_c}{T_c}+\frac{Q_h}{T_h}=0.$$  
   
 In fact, consider a 'grid' formed by isothermal lines $pV=Const$ and adiabatic lines $pV^\gamma=Const$. For any closed route, we should have:  
   
-$\displaystyle \sum\frac{Q_i}{T_i}=0$,  
+$$\sum\frac{Q_i}{T_i}=0,$$  
   
 where $Q_i$ is the heat flow of the $i$-th isothermal segment, and $T_i$ is the temperature of it.  
   
@@ -45,11 +45,11 @@ Now consider the line integral of differential form $\frac{dQ}{T}$ along certain
   
 So if we choose the path to be a loop $C$ formed by this two curve, we would get:  
   
-$\displaystyle\underset{C}{\oint} \frac{dQ}{T}=\displaystyle \sum\frac{Q_i}{T_i}=0$.  
+$$\displaystyle\underset{C}{\oint} \frac{dQ}{T}=\displaystyle \sum\frac{Q_i}{T_i}=0.$$  
   
 This is not hard to understand. Now let's consider arbitrary closed curve. Let's change coordinate with:  
   
-$\displaystyle\begin{cases}u &=pV,\\v &=pV^\gamma,\end{cases}$  
+$$\begin{cases}u &=pV,\\v &=pV^\gamma,\end{cases}$$  
   
 then the differential form $\frac{dQ}{T}$ would now be $w=F(u,v)du+G(u,v)dv$. In this new coordinate:  
   
@@ -73,7 +73,7 @@ $dU=dQ-dW$,
   
 thus,  
   
-$\displaystyle\frac{dQ}{T}=\frac{dU}{T}+\frac{pdV}{T}=\frac{C_V}{T}dT+\frac{nR}{V}dV=d(C_V\ln T+nR\ln V)$.  
+$$\frac{dQ}{T}=\frac{dU}{T}+\frac{pdV}{T}=\frac{C_V}{T}dT+\frac{nR}{V}dV=d(C_V\ln T+nR\ln V).$$  
   
 It's indeed a perfect differential form.  
   
@@ -91,7 +91,7 @@ This definition is based on the result that $\frac{dQ_{rev}}{T}$ is a perfect di
   
 In irreversible process, according to our discussion in lifesaver 2, there are always $W_{irrev}<W_{rev}$, thus we know that $dQ_{irrev}<dQ_{rev}$. If there's any irreversibility in a cycle, we would have:  
   
-$\displaystyle\underset{C}{\oint} \frac{dQ}{T}=\int_{C_{rev}}\frac{dQ_{rev}}{T}+\int_{C_{irrev}}\frac{dQ_{irrev}}{T}<\underset{C}{\oint} \frac{dQ_{rev}}{T}=0$.  
+$$\underset{C}{\oint} \frac{dQ}{T}=\int_{C_{rev}}\frac{dQ_{rev}}{T}+\int_{C_{irrev}}\frac{dQ_{irrev}}{T}<\underset{C}{\oint} \frac{dQ_{rev}}{T}=0.$$  
   
 Thus combine with the equation, we will obtain an inequation:  
   
@@ -101,11 +101,11 @@ This is called ***Clausius' inequality***. This is true for any cycle.
   
 Note that for irreversible processes, $\Delta S\ne \int\frac{dQ}{T}$. In fact, for irreversible processes  
   
-$\displaystyle\Delta S=\int\frac{dQ_{rev}}{T}>\int\frac{dQ_{irrev}}{T}$.  
+$$\Delta S=\int\frac{dQ_{rev}}{T}>\int\frac{dQ_{irrev}}{T}$$  
   
 Combine this with equation, we obtain an inequation:  
   
-$\displaystyle\Delta S\geq\int\frac{dQ}{T}$.  
+$$\Delta S\geq\int\frac{dQ}{T}.$$  
   
 (Keep in mind that $S$ is a state function, so $\Delta S$ only depends on the initial state and the terminal state.)  
   
@@ -115,11 +115,11 @@ $\displaystyle\Delta S\geq\int\frac{dQ}{T}$.
   
 We actually already acquired the method of calculating entropy change above:  
   
-$\displaystyle dS=\frac{dQ}{T}=\frac{C_V}{T}dT+\frac{nR}{V}dV$,  
-  
+$$dS=\frac{dQ}{T}=\frac{C_V}{T}dT+\frac{nR}{V}dV,$$,  
+$  
 thus:  
   
-$\displaystyle \Delta S=\int_{T_1}^{T_2}\frac{C_V}{T}dT+\int_{V_1}^{V_2}\frac{nR}{V}dV=C_V\ln\frac{T_2}{T_1}+nR\ln\frac{V_2}{V_1}$.  
+$$\Delta S=\int_{T_1}^{T_2}\frac{C_V}{T}dT+\int_{V_1}^{V_2}\frac{nR}{V}dV=C_V\ln\frac{T_2}{T_1}+nR\ln\frac{V_2}{V_1}.$$  
   
 ## Entropy of isolated system  
   
@@ -133,15 +133,15 @@ Now we are able to demonstrate this statement. First, what is an *isolated syste
   
 We now know that this definition is basically saying $Q\equiv0$, which means:  
   
-$\displaystyle\Delta S\geq\int\frac{dQ}{T}=0$.  
+$$\displaystyle\Delta S\geq\int\frac{dQ}{T}=0.$$  
   
 If the process is reversible, then:  
   
-$\displaystyle\Delta S=\int\frac{dQ}{T}=0$.  
+$$\displaystyle\Delta S=\int\frac{dQ}{T}=0.$$  
   
 Also, if there's some irreversibility, then:  
   
-$\displaystyle\Delta S>\int\frac{dQ}{T}=0$.  
+$$\displaystyle\Delta S>\int\frac{dQ}{T}=0.$$  
   
 That means, *spontaneous processes in an isolated system increases the system's entropy*.  
   
@@ -175,11 +175,11 @@ We prove this in three steps:
   
 We have already done first step actually. What is a $T$-$S$ diagram? Recall that:  
   
-$dS=d(C_V\ln T+nR\ln V)$.  
+$$dS=d(C_V\ln T+nR\ln V).$$  
   
 Then:  
   
-$\displaystyle\begin{aligned}S&=C_V\ln T+nR\ln V+C\\ &=C_V(\ln T+\frac{nR}{C_V}\ln V)+C\\ &=C_V(\ln T+\frac{C_p-C_V}{C_V}\ln V)+C\\ &=C_V\ln TV^{\gamma-1}+C\\ &=C_V\ln\frac{PV^\gamma}{nR}+C\\ &=C_V\ln PV^\gamma +C.\end{aligned}$  
+$$\begin{aligned}S&=C_V\ln T+nR\ln V+C\\ &=C_V(\ln T+\frac{nR}{C_V}\ln V)+C\\ &=C_V(\ln T+\frac{C_p-C_V}{C_V}\ln V)+C\\ &=C_V\ln TV^{\gamma-1}+C\\ &=C_V\ln\frac{PV^\gamma}{nR}+C\\ &=C_V\ln PV^\gamma +C.\end{aligned}$$  
   
 Also with $T=\frac{PV}{nR}$, it's actually the same with the change of coordinate in the beginning of this note.  
   
@@ -205,7 +205,7 @@ Also consider the highest segment of the curve, it must be going right (why?). S
   
 For any cycle, $Q_{in}\geq S_1+S_2$, and $W=S_2$. We have:  
   
-$\displaystyle \eta=\frac{W}{Q_{in}}\leq\frac{S_2}{S_1+S_2}=1-\frac{S_1}{S_1+S_2}\leq 1-\frac{S_{CDEH}}{S_{CDFG}}=1-\frac{T_{min}}{T_{max}}=\eta_C$.  
+$$\eta=\frac{W}{Q_{in}}\leq\frac{S_2}{S_1+S_2}=1-\frac{S_1}{S_1+S_2}\leq 1-\frac{S_{CDEH}}{S_{CDFG}}=1-\frac{T_{min}}{T_{max}}=\eta_C.$$  
   
 You can also derive this just using integral. But anyway, we arrived at the conclusion that the efficiency of any reversible cycle is less that that of a similar Carnot cycle (Carnot cycle running between $T_{max}$ and $T_{min}$).  
   
@@ -213,7 +213,7 @@ You can also derive this just using integral. But anyway, we arrived at the conc
   
 If there are any irreversibility in the cycle, assume that we put in the same $Q_{in}$, then the engine will not return to the initial state, otherwise $\Delta S=0$, it's reversible. Thus, $\Delta S>0$, if we want the engine to return to initial state, we need to pay extra entropy, that is, dump more heat into the environment (why?). Thus with the same $Q_{in}$, now $|Q_{out}|$ increases. We must have:  
   
-$\displaystyle\eta_{irrev}=1-\frac{|Q_{out}|}{Q_{in}}<\eta_{rev}$.  
+$$\eta_{irrev}=1-\frac{|Q_{out}|}{Q_{in}}<\eta_{rev}$$  
   
 ---  
 [[./index#Postscript|Postscript]]  

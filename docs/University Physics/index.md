@@ -2,7 +2,7 @@
 tags:  
   - physics  
 lev: 2  
-share: "true"  
+share: true  
 categories:  
   - University Physics  
 ---  

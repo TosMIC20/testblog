@@ -271,6 +271,7 @@ For $n_{l,i}$, we apply $\lfloor x\rfloor\geq x-1$ :
 $$\begin{aligned}n_{l,0}&\geq n\\n_{l,1}&\geq \frac{n}{b}-1\\n_{l,2}&\geq \frac{n_{l,1}}{b}-1=\frac{n}{b^2}-\frac{1}{b}-1\\&\vdots\end{aligned}$$  
   
 Thus:  
+  
 $$\begin{aligned}n_{l,i}&\geq \frac{n}{b^i}-\displaystyle\sum_{j=0}^{i-1}\frac{1}{b^j}\\ &>\frac{n}{b^i}-\displaystyle\sum_{j=0}^{\infty}\frac{1}{b^j}\\ &=\frac{n}{b^i}-\frac{b}{b-1}.\end{aligned}$$  
   
 The rest of the proof is similar to upper bound. Q.E.D. for lower bound.  

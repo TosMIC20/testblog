@@ -1,6 +1,6 @@
 ---  
 lev: 1  
-share: "true"  
+share: true  
 ---  
   
   

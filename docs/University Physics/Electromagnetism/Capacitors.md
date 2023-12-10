@@ -6,7 +6,7 @@ lev: 4
 categories:  
   - University Physics  
   - Electromagnetism  
-share: "true"  
+share: true  
 ---  
   
   
@@ -107,9 +107,11 @@ In terms of capacitor energy, let's assume that we have two neutral plates. How 
 In terms of 1 conductor capacitor, let's consider moving charges from infinity to it.  
   
 Consider an intermediate state, where the potential difference between two conductors is $V_q$, and we intend to move $dq$ charge from one to another. The work needed will be $V_qdq$. Thus the total work is given by:  
+  
 $$  
 W=\int_0^QV_qdq=\int_0^Q\frac{q}{C}dq=\frac{1}{C}\int_0^Qqdq=\frac{Q^2}{2C}.  
 $$  
+  
 This is true for any capacitor.   
   
 An understanding for $\frac{1}{2}$ there is think of $W=\frac{Q^2}{2C}=\frac{1}{2}QV$. Think of what we derived in the discussion of [[./Electric Potential#Electric Field Energy|electric field energy]]. The capacitor is a special case for continuous distribution, which is a generalization from sum to integral.  

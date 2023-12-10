@@ -3,7 +3,7 @@ tags:
   - physics  
   - thermodynamics  
 lev: 4  
-share: "true"  
+share: true  
 categories:  
   - University Physics  
   - Thermodynamics  
@@ -40,13 +40,17 @@ Where $dQ$ is the heat flow required to bring about a temperature change $dT$ , 
 ## Work  
   
 The work done by a thermal system on its environment is:  
+  
 $$  
 dW=\vec{F}\cdot d\vec{x}=PAdx=PdV,  
 $$  
+  
 so,  
+  
 $$  
 W=\int_{V_1}^{V_2}PdV.  
 $$  
+  
 Actually the $P$ here is only defined for reversible process. In reversible processes, $P_{sys}=P_{surr}\pm dP$, so whether in case the system does work on environment or the environment does work on the system, we can use $P_{sys}$ for calculation.  
   
 In irreversible processes, $P_{sys}$ is not well defined, we can only use $P_{surr}$ for calculation.  
@@ -78,27 +82,27 @@ His experiment is actually an adiabatic free expansion of gas. The experiment re
   
 In the analysis of isochoric process, we have $dW=0$ and $dQ=C_VdT$. Thus $dU=dQ-dW=C_VdT$, we have:  
   
-$\displaystyle U(T)=\int_0^TC_VdT+Constant.$  
+$$U(T)=\int_0^TC_VdT+Constant.$$  
   
 We just care about changes in $U$, so actually we can set the constant to zero.  
   
 Furthermore, if $C_V$ is independent of temperature, then:  
   
-$U(T)=C_VT.$  
+$$U(T)=C_VT.$$  
   
 ## Relationship between 2 heat capacities  
   
 In the analysis of isobaric process:  
   
-$dU=dQ-dW=C_pdT-pdV=C_pdT-nRdT.$  
+$$dU=dQ-dW=C_pdT-pdV=C_pdT-nRdT.$$  
   
 Combine this with isochoric process:  
   
-$dU=C_VdT.$  
+$$dU=C_VdT.$$  
   
 We know $C_VdT=(C_p-nR)dT$, which means:  
   
-$C_V=C_p-nR$.  
+$$C_V=C_p-nR$$  
   
 This result only applies to ideal gas. Actually it works in some real cases.  
   
