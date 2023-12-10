@@ -1,9 +1,7 @@
 ---  
 tags:  
   - DSA  
-  - master theorem  
-  - master  
-  - theorem  
+  - mastertheorem  
 categories:  
   - DSA  
 share: true  
@@ -55,7 +53,7 @@ The master theorem is used to analyze the complexity of a certain type of recurr
 When $n$ is some power of $b$, there's no rounding in calculation. We start with this special case. The following proof mainly comes from *Introduction to Algorithms*. The arguments in this section all assume that $n=b^l$ for some $l\in\mathbb{N}$ so it will be omitted.  
   
 > For recurrence $(1)$, we define running time function $T(n)$ as follows, where $f(n)$ is nonnegative.  
->$$T(n)=\begin{cases}\Theta(1),&n=1,\\aT(n/b)+f(n),&n=b^j,j\in\mathbb{N}^*.\end{cases}$$  
+> $$T(n)=\begin{cases}\Theta(1),&n=1,\\aT(n/b)+f(n),&n=b^j,j\in\mathbb{N}^*.\end{cases}$$  
   
 Note that $T(n)$ here is **only** defined on exact powers of $b$.  
   
@@ -188,7 +186,9 @@ We start with a similar lemma to lemma 1 in special case.
 #### Lemma 3:  
   
 > $$T_u(n)=\Theta(n^{\log_b a})+\displaystyle\sum_{i=0}^{\lfloor\log_b n\rfloor-1}a^if(n_{u,i}),$$  
+>   
 > where $n_{u,i}$ is defined as:  
+>   
 > $$n_{u,i}=\begin{cases}n,&i=0,\\\lceil n_{u,i-1}/b\rceil,&i>0.\end{cases}$$  
   
 ***Proof:***  
