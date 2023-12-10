@@ -4,7 +4,7 @@ tags:
   - thermodynamics  
   - statistical_mechanics  
 lev: 4  
-share: "true"  
+share: true  
 categories:  
   - University Physics  
   - Thermodynamics  
@@ -40,19 +40,19 @@ categories:
   
 Since there's no preferred direction for velocity, we know the average velocity is zero:  
   
-$\langle \vec{v}\rangle=\langle v_x\rangle=\langle v_y\rangle=\langle v_z\rangle=0$.  
+$$\langle \vec{v}\rangle=\langle v_x\rangle=\langle v_y\rangle=\langle v_z\rangle=0$$  
   
 But average speed and the average of speed squared is not zero. $\sqrt{\langle v^2\rangle}$ is called ***root-mean-square (rms) speed***. Note that average speed $\langle v\rangle$ is different from rms speed, because taking average and square root don't commute.  
   
 Also, since there's no preferred direction and $v^2=v_x^2+v_y^2+v_z^2$, we know:  
   
-$\langle v_x^2\rangle=\langle v_y^2\rangle=\langle v_z^2\rangle=\frac{1}{3}\langle v^2\rangle$.  
+$$\langle v_x^2\rangle=\langle v_y^2\rangle=\langle v_z^2\rangle=\frac{1}{3}\langle v^2\rangle$$  
   
 ### Internal energy  
   
 For monatomic molecules, we can assert that the internal energy entirely comes from molecules' kinetic energy, which means:  
   
-$U=N\langle K\rangle=N\cdot \frac{1}{2}m\langle v^2\rangle$.  
+$$U=N\langle K\rangle=N\cdot \frac{1}{2}m\langle v^2\rangle.$$  
   
 ### Pressure  
   
@@ -64,19 +64,29 @@ There are molecules with $v_x$ moving out of the cylinder and into it during $dt
   
 Actually only half of the molecules with $v_x$ is going to hit the wall, since another half are going left. What's the number density $\rho_x$ of molecules with $x$-component of velocity of  $v_x$?   
   
-Assume that in all molecules, a molecule has probability density $f(v_x)$ to have $x$-component of velocity of  $v_x$. Then $\rho_x=f(v_x)\bar{\rho}=\frac{f(v_x)N}{V}$.  
+Assume that in all molecules, a molecule has probability density $f(v_x)$ to have $x$-component of velocity of  $v_x$. Then   
   
-Then during $dt$, the number of collisions between molecules with $x$-component of velocity of  $v_x$ and an area $A$ of the wall is given by: $\frac{1}{2}\rho_x(v_xdt)A=\frac{f(v_x)N}{2V}v_xAdt$.  
+$$\rho_x=f(v_x)\bar{\rho}=\frac{f(v_x)N}{V}.$$  
   
-We are assuming elastic collision with the wall, the total momentum transferred by the molecular collisions in time $dt$ is $dp_{v_x}=(2mv_x)\frac{f(v_x)N}{2V}v_xAdt=mv_x^2f(v_x)\frac{N}{V}Adt$.  
+Then during $dt$, the number of collisions between molecules with $x$-component of velocity of  $v_x$ and an area $A$ of the wall is given by:   
   
-This yields a force $F_{v_x}=\frac{dp_x}{dt}=mv_x^2f(v_x)\frac{N}{V}A$,   
+$$\frac{1}{2}\rho_x(v_xdt)A=\frac{f(v_x)N}{2V}v_xAdt.$$  
   
-and a pressure on the wall: $P_{v_x}=\frac{F_x}{A}=mv_x^2f(v_x)\frac{N}{V}$.  
+We are assuming elastic collision with the wall, the total momentum transferred by the molecular collisions in time $dt$ is  
+  
+$$dp_{v_x}=(2mv_x)\frac{f(v_x)N}{2V}v_xAdt=mv_x^2f(v_x)\frac{N}{V}Adt.$$  
+  
+This yields a force  
+  
+$$F_{v_x}=\frac{dp_x}{dt}=mv_x^2f(v_x)\frac{N}{V}A,$$  
+  
+and a pressure on the wall:  
+  
+$$P_{v_x}=\frac{F_x}{A}=mv_x^2f(v_x)\frac{N}{V}$$  
   
 To get the total pressure, we need to sum over all $P_{v_x}$, which means integral:  
   
- $\displaystyle\int mv_x^2f(v_x)\frac{N}{V}dv_x$.  
+ $$\int mv_x^2f(v_x)\frac{N}{V}dv_x$$  
   
 What is $\displaystyle\int v_x^2f(v_x)dv_x$ ? It's just $\langle v_x^2\rangle$! So $P=m\frac{N}{V}\langle v_x^2\rangle$. We also have $U=N\cdot \frac{1}{2}m\langle v^2\rangle=\frac{3}{2}mN\langle v_x^2\rangle$. Therefore we get a beautiful equation:  
   
@@ -86,7 +96,7 @@ What is $\displaystyle\int v_x^2f(v_x)dv_x$ ? It's just $\langle v_x^2\rangle$! 
   
 The textbook here just relate the ideal gas law $PV=nRT=Nk_BT$ with $PV=\frac{2}{3}U$ here to yield:  
   
-$k_BT=\frac{2U}{3N}=\frac{2}{3}\langle K\rangle$.  
+$$k_BT=\frac{2U}{3N}=\frac{2}{3}\langle K\rangle.$$  
   
 *The temperature of an ideal gas is a measure of the average kinetic energy of the constituents.*  
   
@@ -100,39 +110,39 @@ What we want to do is finding a probability density function $F(\vec{v})$ for ve
   
 We defined a probability density function $f(v_x)$ for $x$-component of velocity in last section. We know that due to symmetry that would also work for $y$ and $z$-component. And they are independent, so we can say that:  
   
-$F(v_x,v_y,v_z)=f(v_x)f(v_y)f(v_z)$.  
+$$F(v_x,v_y,v_z)=f(v_x)f(v_y)f(v_z)$$  
   
 There's no preferred direction for velocity, thus all $\vec{v}$ with equal magnitudes share the same value of $F(\vec{v})$. So $F$ can be described by a function of $|\vec{v}|$. For convenience, $F$ can be described by a function of $v^2=|\vec{v}|^2$. That is:  
   
-$\exists G,\;s.t.\;F(\vec{v})=G(v^2)$.   
+$$\exists G,\;s.t.\;F(\vec{v})=G(v^2).$$  
   
 It's the same with three components:  
   
-$\exists g,\;s.t.\; f(v_i)=g(v_i^2),\;for\;i=x,y,z$.  
+$$\exists g,\;s.t.\; f(v_i)=g(v_i^2),\;for\;i=x,y,z.$$  
   
 Now we get:  
   
-$G(v^2)=G(v_x^2+v_y^2+v_z^2)=g(v_x^2)g(v_y^2)g(v_z^2)$.  
+$$G(v^2)=G(v_x^2+v_y^2+v_z^2)=g(v_x^2)g(v_y^2)g(v_z^2).$$  
   
 Take logarithm:  
   
-$\ln G(v^2)=\ln G(v_x^2+v_y^2+v_z^2)=\ln g(v_x^2)+\ln g(v_y^2)+\ln g(v_z^2)$.  
+$$\ln G(v^2)=\ln G(v_x^2+v_y^2+v_z^2)=\ln g(v_x^2)+\ln g(v_y^2)+\ln g(v_z^2)$$  
   
 For convenience, set $s=v^2$and $s_i=v_i^2$, set $H(x)=\ln G(x)$, $h(x)=\ln g(x)$, then:  
   
-$H(s)=H(s_x+s_y+s_z)=h(s_x)+h(s_y)+h(s_z)$.  
+$$H(s)=H(s_x+s_y+s_z)=h(s_x)+h(s_y)+h(s_z).$$  
   
 Set $s_x=s_y=s_z=s_0$,  
   
-$H(3s_0)=3h(s_0)\implies h(x)=\frac{1}{3}H(3x)$,  
+$$H(3s_0)=3h(s_0)\implies h(x)=\frac{1}{3}H(3x).$$  
   
 which means:  
   
-$H(s_x+s_y+s_z)=\frac{1}{3}(H(3s_x)+H(3s_y)+H(3s_z))$.  
+$$H(s_x+s_y+s_z)=\frac{1}{3}(H(3s_x)+H(3s_y)+H(3s_z)).$$  
   
 Of course we assume that at least $H\in \mathscr{C}^1[0,+\infty)$ (Actually we can suppose that it's smooth). Due to a series of conclusions in calculus on convexity, $H$ can only be a linear function, so is $h$, and:  
   
-$f(v_x)=g(v_x^2)=\exp\{h(s_x)\}=e^{as_x+b}=e^{av_x^2+b}$.  
+$$f(v_x)=g(v_x^2)=\exp\{h(s_x)\}=e^{as_x+b}=e^{av_x^2+b}.$$  
   
 And $f$ must satisfies:  
   
@@ -180,9 +190,7 @@ The discussion before only works for monatomic gas, because for molecules with m
   
 Boltzmann got this equation:  
   
-> $$  
-> F=\frac{1}{Z}e^{-\frac{E}{k_BT}}.  
-> $$  
+> $$F=\frac{1}{Z}e^{-\frac{E}{k_BT}}.$$  
   
 Here $E$ is total energy, $Z$ is constant that takes into account the normalization. Actually we can do most of its derivation, but what we can't explain is that why the average energy of every term is exactly $\frac{1}{2}k_BT$. Here comes the equipartition:  
   
