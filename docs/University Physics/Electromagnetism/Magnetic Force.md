@@ -118,3 +118,7 @@ Then, set $\vec{\mu}=I\vec{S}$, then:
 > $$\vec{\tau}=\vec{\mu}\times\vec{B}.$$  
   
 Actually, a current loop is called a ***magnetic dipole***, and $\vec{\mu}$ is the ***magnetic dipole moment*** of the loop.  
+  
+---  
+Ahead:  
+- [[Magnetic Field|Magnetic Field]]
