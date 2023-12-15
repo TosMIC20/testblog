@@ -59,11 +59,16 @@ lev: 3
   
 ### Formal definition of context-free grammar:  
   
+> [!definition]  
 > A ***context-free grammar*** (***CFG***) is a 4-tuple $G=(V,T,P,S)$, which satisfies:  
->  
-> $$V\cap T=\emptyset,S\in V, $$  
->  
-> $$P\subseteq\{A\rightarrow \alpha|A\in V,\alpha \in (V\cup T)^*\}$$  
+>   
+>$$  
+> \begin{gather*}  
+> V\cap T=\emptyset,S\in V,\\  
+> P\subseteq\{A\rightarrow \alpha|A\in V,\alpha \in (V\cup T)^*\}  
+> \end{gather*}  
+> $$  
+>   
   
 The first two rules describe set of terminals, set of variables and start symbol. The last one requires all productions in $P$ to be in a specific form. Here are two examples of CFG:  
   
@@ -407,4 +412,8 @@ But for $iie$, there are two different leftmost derivations:
 This is called *dangling else ambiguity*. It can be solved by matching each $else$ with the nearest $if$, and considering $else$ from left to right.  
   
 - $S\rightarrow \epsilon|iS|iMeS$.  
-- $M\rightarrow \epsilon|iMeM$.
+- $M\rightarrow \epsilon|iMeM$.  
+  
+---  
+Ahead:  
+- [[Regular Expr&Lang|Regular Expr&Lang]]

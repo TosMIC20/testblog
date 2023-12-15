@@ -89,3 +89,7 @@ $$L^k=\begin{cases}\{\epsilon\},&k=0\\L^{k-1}L,&k\geq 1\end{cases}$$
 $$L^*=\bigcup\limits_{i=0}^\infty L^i=L^0\cup L^1\cup L^2\cup\cdots$$  
   
 $$L^+=\bigcup\limits_{i=1}^\infty L^i=L^1\cup L^2\cup L^3\cup\cdots$$  
+  
+---  
+Ahead:  
+- [[./Context-Free Grammar|Context-Free Grammar]]
