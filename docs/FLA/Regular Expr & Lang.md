@@ -11,15 +11,15 @@ tags:
   
 # Table of Contents  
   
-- [[Regular Expr&Lang#Regular Language|Regular Language]]  
-- [[Regular Expr&Lang#Regular Expression|Regular Expression]]  
-	- [[Regular Expr&Lang#Regular Expression|The language of RE]]  
-- [[Regular Expr&Lang#Algebraic Laws for RE|Algebraic Laws for RE]]  
-	- [[Regular Expr&Lang#Algebraic Laws for RE|Basic laws:]]  
-		- [[Regular Expr&Lang#Basic laws:|Associativity & commutativity]]  
-		- [[Regular Expr&Lang#Basic laws:|Identities & annihilators]]  
-		- [[Regular Expr&Lang#Basic laws:|Distributive laws]]  
-	- [[Regular Expr&Lang#Algebraic Laws for RE|Test for a RE algebraic law]]  
+- [[Regular Expr & Lang#Regular Language|Regular Language]]  
+- [[Regular Expr & Lang#Regular Expression|Regular Expression]]  
+	- [[Regular Expr & Lang#Regular Expression|The language of RE]]  
+- [[Regular Expr & Lang#Algebraic Laws for RE|Algebraic Laws for RE]]  
+	- [[Regular Expr & Lang#Algebraic Laws for RE|Basic laws:]]  
+		- [[Regular Expr & Lang#Basic laws:|Associativity & commutativity]]  
+		- [[Regular Expr & Lang#Basic laws:|Identities & annihilators]]  
+		- [[Regular Expr & Lang#Basic laws:|Distributive laws]]  
+	- [[Regular Expr & Lang#Algebraic Laws for RE|Test for a RE algebraic law]]  
   
   
 # Regular Expr&Lang   
@@ -84,7 +84,7 @@ Moreover, the structure remains true even if you substitute a symbol with a set 
 >- If $E$ and $F$ contain variables, then $E=F$ iff whatever language we substitute for the variables in them, they represent the same language.  
   
 >[!info]  
->You can skip to [[Regular Expr&Lang#Test for a RE algebraic law|Test for a RE algebraic law]] directly for more on equivalence between REs.  
+>You can skip to [[Regular Expr & Lang#Test for a RE algebraic law|Test for a RE algebraic law]] directly for more on equivalence between REs.  
   
 ### Basic laws:  
   
