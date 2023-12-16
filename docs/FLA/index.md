@@ -20,7 +20,7 @@ categories:
 >[!INFO]- TOC  
 >![[./Context-Free Grammar#Table of Contents|Context-Free Grammar > Table of Contents]]  
   
-## [[Regular Expr&Lang|Regular Expr&Lang]]  
+## [[./Regular Expr&Lang|Regular Expr&Lang]]  
   
 >[!INFO]- TOC  
->![[Regular Expr&Lang#Table of Contents|Regular Expr&Lang > Table of Contents]]  
+>![[./Regular Expr&Lang#Table of Contents|Regular Expr&Lang > Table of Contents]]  
