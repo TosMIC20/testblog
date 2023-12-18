@@ -10,20 +10,20 @@ lev: 3
   
 # Table of Contents  
   
-- [[The Basics in FL&A#Alphabet:|Alphabet:]]  
-- [[The Basics in FL&A#String:|String:]]  
-	- [[The Basics in FL&A#String:|Empty String:]]  
-	- [[The Basics in FL&A#String:|Length of Strings:]]  
-	- [[The Basics in FL&A#String:|Concatenation of Strings:]]  
-- [[The Basics in FL&A#Powers of an Alphabet:|Powers of an Alphabet:]]  
-- [[The Basics in FL&A#Language:|Language:]]  
-- [[The Basics in FL&A#Operations on Language:|Operations on Language:]]  
-	- [[The Basics in FL&A#Operations on Language:|Union:]]  
-	- [[The Basics in FL&A#Operations on Language:|Concatenation:]]  
-	- [[The Basics in FL&A#Operations on Language:|Power and Closure:]]  
+- [[The Basics in FLA#Alphabet:|Alphabet:]]  
+- [[The Basics in FLA#String:|String:]]  
+	- [[The Basics in FLA#String:|Empty String:]]  
+	- [[The Basics in FLA#String:|Length of Strings:]]  
+	- [[The Basics in FLA#String:|Concatenation of Strings:]]  
+- [[The Basics in FLA#Powers of an Alphabet:|Powers of an Alphabet:]]  
+- [[The Basics in FLA#Language:|Language:]]  
+- [[The Basics in FLA#Operations on Language:|Operations on Language:]]  
+	- [[The Basics in FLA#Operations on Language:|Union:]]  
+	- [[The Basics in FLA#Operations on Language:|Concatenation:]]  
+	- [[The Basics in FLA#Operations on Language:|Power and Closure:]]  
   
   
-# The Basics in FL&A  
+# The Basics in FLA  
   
 ## Alphabet:  
   
