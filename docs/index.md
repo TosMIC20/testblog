@@ -1,6 +1,7 @@
 ---  
 lev: 1  
 share: true  
+title: Home  
 ---  
   
 # Guide  
