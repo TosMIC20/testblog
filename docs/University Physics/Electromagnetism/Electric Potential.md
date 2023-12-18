@@ -235,9 +235,13 @@ $$
   
 >[!WARNING]  
 >This formula requires the integration zone to be the whole space:  
+>  
 >$$U=\int_{\mathbb{R}^3}ud\vec{r}.$$  
->While the original formula can take integration zone to be any volume "containing" $\rho$:  
->$$W=\frac{1}{2}\int\rho(\vec{r}) V(\vec{r})d\vec{r}.$$  
+>  
+>While the original formula can take integration zone to be any volume $\mathcal{V}$ "containing" $\rho$:  
+>  
+> $$W=\frac{1}{2}\int_\mathcal{V}\rho(\vec{r}) V(\vec{r})d\vec{r}.$$  
+>  
   
 ---  
 Ahead:  
