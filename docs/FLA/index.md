@@ -11,10 +11,10 @@ categories:
   
 # Overview  
   
-## [[./The Basics in FL&A|The Basics in FL&A]]  
+## [[./The Basics in FLA|The Basics in FLA]]  
   
 >[!INFO]- TOC  
->![[./The Basics in FL&A#Table of Contents|The Basics in FL&A > Table of Contents]]  
+>![[./The Basics in FLA#Table of Contents|The Basics in FLA > Table of Contents]]  
   
 ## [[./Context-Free Grammar|Context-Free Grammar]]  
   
