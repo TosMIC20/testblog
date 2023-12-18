@@ -16,6 +16,7 @@ categories:
   
 ## [[./Electromagnetism/index|Electromagnetism]]  
   
+  
 ### [[./Electromagnetism/index#Electrostatics|Electrostatics]]  
   
 >[!INFO]- TOC  
