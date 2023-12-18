@@ -5,7 +5,7 @@ share: true
   
 # Guide  
   
-## [[About|About]]  
+## [[./About|About]]  
   
 ## [[./University Physics/index|University Physics]]  
   
