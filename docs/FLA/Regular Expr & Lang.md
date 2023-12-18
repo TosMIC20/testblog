@@ -26,7 +26,7 @@ tags:
 ## Regular Language  
   
 >[!definition]  
->***Regular language (RL)*** on [[./The basic definitions in FL&A#Alphabet|alphabet]] $\Sigma$ is defined by induction:  
+>***Regular language (RL)*** on [[./The Basics in FL&A#Alphabet|alphabet]] $\Sigma$ is defined by induction:  
 >- **Basis:**  
 >   1. $\{\varepsilon\}$, $\emptyset$ are RL;  
 >   2. For any $a\in\Sigma$, $\{a\}$ is RL;  
@@ -38,7 +38,7 @@ tags:
 ## Regular Expression  
   
 >[!definition]  
->***Regular expression (RE)*** on [[./The basic definitions in FL&A#Alphabet|alphabet]] $\Sigma$ is defined by induction:  
+>***Regular expression (RE)*** on [[./The Basics in FL&A#Alphabet|alphabet]] $\Sigma$ is defined by induction:  
 >- **Basis:**  
 >   1. $\varepsilon$, $\emptyset$ are RE;  
 >   2. Any $a\in\Sigma$ is RE;  
@@ -57,7 +57,7 @@ tags:
 ### The language of RE  
   
 >[!definition]  
->Define the [[./The basic definitions in FL&A#Language|language]] of an RE on $\Sigma$ by induction:  
+>Define the [[./The Basics in FL&A#Language|language]] of an RE on $\Sigma$ by induction:  
 >- **Basis:**  
 >   1. $L(\varepsilon)=\{\varepsilon\}$, and $L(\emptyset)=\emptyset$.  
 >   2. For $a\in \Sigma$, $L(a)=\{a\}$.  
@@ -113,7 +113,9 @@ In our definition of equivalence between REs, we distinguished RE without variab
   
 >[!theorem]  
 >If RE $E$ and $F$ have variables, substitute each variable with a single symbol from $\Sigma$ to get $C$ and $D$, then:  
+>  
 >$$E=F\iff C=D.$$  
+>  
   
 >[!proof]-  
 >This theorem indeed comes from the fact that RE just represents a structure, let's start with a lemma which describes this.  
