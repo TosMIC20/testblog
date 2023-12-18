@@ -22,11 +22,11 @@ tags:
 	- [[Regular Expr & Lang#Algebraic Laws for RE|Test for a RE algebraic law]]  
   
   
-# Regular Expr&Lang   
+# Regular Expr & Lang   
 ## Regular Language  
   
 >[!definition]  
->***Regular language (RL)*** on [[./The Basics in FL&A#Alphabet|alphabet]] $\Sigma$ is defined by induction:  
+>***Regular language (RL)*** on [[./The Basics in FLA#Alphabet|alphabet]] $\Sigma$ is defined by induction:  
 >- **Basis:**  
 >   1. $\{\varepsilon\}$, $\emptyset$ are RL;  
 >   2. For any $a\in\Sigma$, $\{a\}$ is RL;  
@@ -38,7 +38,7 @@ tags:
 ## Regular Expression  
   
 >[!definition]  
->***Regular expression (RE)*** on [[./The Basics in FL&A#Alphabet|alphabet]] $\Sigma$ is defined by induction:  
+>***Regular expression (RE)*** on [[./The Basics in FLA#Alphabet|alphabet]] $\Sigma$ is defined by induction:  
 >- **Basis:**  
 >   1. $\varepsilon$, $\emptyset$ are RE;  
 >   2. Any $a\in\Sigma$ is RE;  
@@ -57,7 +57,7 @@ tags:
 ### The language of RE  
   
 >[!definition]  
->Define the [[./The Basics in FL&A#Language|language]] of an RE on $\Sigma$ by induction:  
+>Define the [[./The Basics in FLA#Language|language]] of an RE on $\Sigma$ by induction:  
 >- **Basis:**  
 >   1. $L(\varepsilon)=\{\varepsilon\}$, and $L(\emptyset)=\emptyset$.  
 >   2. For $a\in \Sigma$, $L(a)=\{a\}$.  
