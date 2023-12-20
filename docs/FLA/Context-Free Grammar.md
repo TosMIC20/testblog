@@ -99,7 +99,9 @@ Reducing the given string to a variable by applying productions from body to hea
   
 - For CFG $G_{exp}$ (defined above), and string $v\cdot(v+d)$:  
   
-  $v\cdot(v+d)\implies v\cdot(v+E)\implies vO(v+E)\implies\cdots\implies EO(EOE)\implies EO(E)\implies EOE\implies E$  
+$$\begin{gather*}  
+v\cdot(v+d)\implies v\cdot(v+E)\implies vO(v+E)\implies\cdots\\\implies EO(EOE)\implies EO(E)\implies EOE\implies E  
+\end{gather*}$$  
   
 #### 2.Derivation:  
   
@@ -107,7 +109,11 @@ Expanding variable into the string by applying productions from head to body.
   
 - For CFG $G_{exp}$ (defined above), and string $v\cdot(v+d)$:  
   
-  $E\implies EOE\implies EO(E)\implies EO(EOE)\implies vO(EOE)\cdots\implies v\cdot(v+d)$  
+$$  
+\begin{gather*}  
+E\implies EOE\implies EO(E)\implies EO(EOE)\\\implies vO(EOE)\implies\cdots\implies v\cdot(v+d)  
+\end{gather*}  
+$$  
   
 *PS: Actually we need to prove that the two approaches are equivalent.*  
   
@@ -134,7 +140,12 @@ Replace the leftmost variable by one of its production body in each derivation s
   
 Symbol: $\underset{lm}{\Rightarrow}$ and $\overset{*}{\underset{lm}{\Rightarrow}}$, eg.  
   
-$E\underset{lm}{\Rightarrow} EOE\underset{lm}{\Rightarrow} vOE\underset{lm}{\Rightarrow} v\cdot E\underset{lm}{\Rightarrow} v\cdot(E)\underset{lm}{\Rightarrow} v\cdot(EOE)\underset{lm}{\Rightarrow} v\cdot(vOE)\overset{*}{\underset{lm}{\Rightarrow}} v\cdot(v+d)$  
+$$  
+\begin{gather*}  
+E\underset{lm}{\Rightarrow} EOE\underset{lm}{\Rightarrow} vOE\underset{lm}{\Rightarrow} v\cdot E\underset{lm}{\Rightarrow} v\cdot(E)\\  
+\underset{lm}{\Rightarrow} v\cdot(EOE)\underset{lm}{\Rightarrow} v\cdot(vOE)\overset{*}{\underset{lm}{\Rightarrow}} v\cdot(v+d)  
+\end{gather*}  
+$$  
   
 #### 2. Rightmost derivation:  
   
@@ -142,7 +153,7 @@ Replace the rightmost variable by one of its production body in each derivation 
   
 Symbol: $\underset{rm}{\Rightarrow}$ and $\overset{*}{\underset{rm}{\Rightarrow}}$, eg.  
   
-$E\underset{rm}{\Rightarrow} EOE\underset{rm}{\Rightarrow} EO(E)\underset{rm}{\Rightarrow} EO(EOE)\underset{rm}{\Rightarrow} EO(EOd)\overset{*}{\underset{rm}{\Rightarrow}} v\cdot(v+d)$  
+$$E\underset{rm}{\Rightarrow} EOE\underset{rm}{\Rightarrow} EO(E)\underset{rm}{\Rightarrow} EO(EOE)\underset{rm}{\Rightarrow} EO(EOd)\overset{*}{\underset{rm}{\Rightarrow}} v\cdot(v+d)$$  
   
 ## Context-Free Language  
   
